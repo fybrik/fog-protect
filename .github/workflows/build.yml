@@ -48,6 +48,7 @@ jobs:
       # if: ${{ (github.event_name != 'pull_request') && !contains(github.ref, 'tags') }}
       run: make docker-push
     
+    
     # - id: version
     #   name: Infer version
     #   run: echo ::set-output name=version::${GITHUB_REF#refs/*/}
